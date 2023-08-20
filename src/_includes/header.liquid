@@ -1,0 +1,45 @@
+<nav class="
+{% if page.navstyle %}
+  {{ page.navstyle }}
+{% endif %}
+" id="nav">
+<a href="/"><img id="nav-logo" src="/_media/logos/logo-small-dark.svg" alt="logo"></a>
+<script>
+  if (document.getElementsByTagName("nav")[0].classList.contains("dark")) {
+    document.getElementById('nav-logo').src="/_media/logos/logo-small-light.svg"
+  }
+</script>
+
+<div id="link-drawer" class="links">
+  <div class="links-container">
+    <a href="#">Lorem</a>
+    <a href="#">Lorem</a>
+    <a href="#">Lorem</a>
+    <a href="#">Lorem</a>
+    <a href="#">Lorem</a>
+    <a href="#">Lorem</a>
+  </div>
+</div>
+
+<button id="link-drawer-handle" class="link-drawer-handle"><img src="/_media/elements/chevron-right.svg"></button>
+
+<script>
+  var b = document.getElementById("link-drawer-handle");
+  var linkDrawerIsOpen = false;
+
+  b.addEventListener("click", () => {
+    if (linkDrawerIsOpen) {
+      document.getElementById("link-drawer").classList.remove("visible");
+      document.getElementById("nav").classList.remove("link-drawer-open");
+      b.classList.remove('rotated');
+      linkDrawerIsOpen = false;
+    } else {
+      document.getElementById("link-drawer").classList.add("visible");
+      document.getElementById("nav").classList.add("link-drawer-open");
+      b.classList.add('rotated');
+      linkDrawerIsOpen = true;
+    }
+  });
+</script>
+
+</nav>
