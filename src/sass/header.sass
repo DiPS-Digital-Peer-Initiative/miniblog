@@ -6,24 +6,11 @@ nav
      justify-content: space-between
      align-items: center
      padding: 2em 3em
-     background-color: rgba(255, 255, 255, 0.5)
      position: fixed
      width: calc(100vw - 6em)
      z-index: 10000
      height: 48px
-     backdrop-filter: blur(10px)
-     -webkit-backdrop-filter: blur(10px)
-     -moz-backdrop-filter: blur(10px)
-     -o-backdrop-filter: blur(10px)
-     border-bottom: 1px solid rgba(0, 0, 0, 0.25)
-     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25)
-     a
-          text-decoration: none
-          font-family: 'IBM Plex Mono'
-          color: #fff
-          transition: all linear .25s
-          &:hover 
-               background-color: rgba(0, 0, 0, 0.05)
+
      img
           height: 48px
 
@@ -44,11 +31,12 @@ nav
           gap: 1.5em
           display: relative
           align-items: center
+          font-family: 'IBM Plex Mono'
           a
                color: $gray25
                text-decoration: none
                &:hover, &:active
-                    color: #fff
+                    color: $theme-dark
                     text-decoration: underline
                     font-weight: bold
                     transition: all linear 0.25s
