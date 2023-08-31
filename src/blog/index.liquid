@@ -4,8 +4,9 @@ layout: main-layout
 
 <h1>All miniblog articles</h1>
 
+
+<ul>
 {% for page in collections.pages %}
-     <a class="article-link" href="{{ page.url }}">
-          {{page.data.title}}
-     </a>
+     <li><a class="article-link" href="{{ page.url }}">{{page.data.title}}</a></li>
 {% endfor %}
+</ul>
