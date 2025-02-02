@@ -11,7 +11,7 @@
 		"build": "run-s build:sass build:11ty"
 	},
 	"repository": "https://github.com/Atal-Lab-DPSBS/site.git",
-	"author": "Sumukh Prasad <sumukhprasad@icloud.com>",
+	"author": "Sumukh Prasad",
 	"license": "MIT",
 	"devDependencies": {
 		"@11ty/eleventy": "11ty/eleventy",
